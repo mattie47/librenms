@@ -57,6 +57,9 @@ function data_uri($file, $mime)
 function nicecase($item)
 {
     switch ($item) {
+        case 'awplus-amf':
+            return 'AMF';
+
         case 'dbm':
             return 'dBm';
 
