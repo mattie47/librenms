@@ -1674,6 +1674,14 @@ function uw_to_dbm($value)
 {
     return 10 * log10($value / 1000);
 }
+
+// Not entirely correct. I shouldn't be doing
+// divide by 10000 here. Should be done under awplus dBm
+
+function mw_to_dbm($value)
+{
+    return 10 * log10($value / 10000);
+}
 /**
  * @param $value
  * @param null $default
